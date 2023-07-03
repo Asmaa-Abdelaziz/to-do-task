@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <div class="centered-container navbar-content">
+        <div>
+          <a class="navbar-brand" href="#">
+            <span>TASKS</span>
+            <span>To Do List</span>
+          </a>
+        </div>
+        <div class="navs">
+          <button
+            class="navbar-toggler"
+            data-target="#nav1"
+            data-toggle="collapse"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nav1">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link home active" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link signup" href="#">Sign up</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link to-do" href="#">To do list</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link about" href="#">About Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- home page -->
+    <div class="home body-content active">
+      <!--Carousel-->
+      <div class="carousel slide" data-ride="carousel" id="carousel-slider">
+        <div class="carousel-indicators">
+          <li data-target="#carousel-slider" data-slide-to="0" active></li>
+          <li data-target="#carousel-slider" data-slide-to="1"></li>
+          <li data-target="#carousel-slider" data-slide-to="2"></li>
+          <li data-target="#carousel-slider" data-slide-to="3"></li>
+          <li data-target="#carousel-slider" data-slide-to="4"></li>
+          <li data-target="#carousel-slider" data-slide-to="5"></li>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="background-opacity">
+              <img src="images/1.jpg" class="d-block w-100" alt="" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/2.jpg" class="d-block w-100" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/3.jpg" class="d-block w-100" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/4.jpg" class="d-block w-100" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/5.jpg" class="d-block w-100" alt="" />
+          </div>
+          <div class="carousel-item">
+            <img src="images/6.jpg" class="d-block w-100" alt="" />
+          </div>
+          <div class="carousel-caption">
+            <h1>Your solution to manage your <br /><span>TIME</span></h1>
+            <h1 id="current-time"></h1>
+            <h3 id="current-date"></h3>
+          </div>
+          <a
+            href="#carousel-slider"
+            class="carousel-control-prev"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            href="#carousel-slider"
+            class="carousel-control-next"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </div>
+      <!--Body Start-->
+
+      <div class="why-us">
+        <div class="centered-container">
+          <h4>Why you choose us</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="cards">
+            <div class="card col-md-6 col-lg-3">
+              <div>
+                <i class="fa-solid fa-leaf"></i>
+              </div>
+              <h5>We Deliver Quality</h5>
+              <p>
+                some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="card col-md-6 col-lg-3">
+              <div>
+                <i class="fa-solid fa-futbol"></i>
+              </div>
+              <h5>Always on time</h5>
+              <p>
+                some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="card col-md-6 col-lg-3">
+              <div>
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <h5>We Are Pationate</h5>
+              <p>
+                some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+            <div class="card col-md-6 col-lg-3">
+              <div>
+                <i class="fa-solid fa-arrow-trend-up"></i>
+              </div>
+              <h5>Professional Service</h5>
+              <p>
+                some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="our-services" id="ourservices">
+        <div class="centered-container">
+          <h1>Our Services</h1>
+          <div class="cards">
+            <div class="card col-md-6 col-lg-4">
+              <img src="images/3.jpg" alt="" />
+              <h5>We Deliver Quality</h5>
+              <p>
+                some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button class="btn btn-primary">Know More</button>
+            </div>
+            <div class="card col-md-6 col-lg-4">
+              <img src="images/4.jpg" class="card-img-top" alt="" />
+              <h5>Always On Time</h5>
+              <p>
+                some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button class="btn btn-primary">Know More</button>
+            </div>
+            <div class="card col-md-12 col-lg-4">
+              <img src="images/5.jpg" alt="" />
+              <h5>We Are Pationate</h5>
+              <p>
+                some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <button class="btn btn-primary">Know More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- sign up page -->
+    <div class="signup body-content">
+      <div class="background"></div>
+      <div class="centered-container">
+        <form>
+          <div class="form-body">
+            <div class="name-area">
+              <div class="name f-name w-50">
+                <label for="fname" class="form-label">First Name: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="first name"
+                  oninput="updateFullName ()"
+                />
+                <p></p>
+              </div>
+              <div class="name l-name w-50">
+                <label for="lname" class="form-label">Last Name: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="last name"
+                  oninput="updateFullName ()"
+                />
+                <p></p>
+              </div>
+            </div>
+            <div class="full-name w-100">
+              <label for="flname" class="form-label"
+                >Full Name: <span id="fullName"></span
+              ></label>
+            </div>
+            <div class="email w-100">
+              <label for="email" class="form-label">Email address: </label>
+              <input type="email" class="form-control" />
+              <p>We'll never share your email with anyone else.</p>
+            </div>
+            <div class="password">
+              <label for="password" class="form-label">Password: </label>
+              <div class="password-area">
+                <input type="password" class="form-control w-100" />
+                <span>show</span>
+              </div>
+              <p>Your password must be 5-15 characters long.</p>
+            </div>
+            <div class="country-area">
+              <p>country:</p>
+              <select class="form-select mb-3 w-100 country-select">
+                <option selected>Select Your Country first</option>
+              </select>
+            </div>
+            <div class="city-area">
+              <p>City: (optional)</p>
+              <select class="form-select mb-3 w-100 city-select">
+                <option selected>Select Your Country first</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="textarea" class="form-label"
+                >Message (optional)</label
+              >
+              <textarea
+                class="form-control"
+                id="textarea"
+                rows="3"
+                placeholder="write any message you want"
+              ></textarea>
+            </div>
+            <div class="btn col-12">
+              <button class="btn btn-primary w-25" type="submit">
+                Sign up
+              </button>
+              <p class="m-auto">
+                Already have account?
+                <span style="color: #007bff; cursor: pointer">Log in</span>
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- to-do-list page -->
+    <div class="to-do body-content">
+      <div class="centered-container">
+        <div class="background"></div>
+        <div class="task-form hidden">
+          <form>
+            <div class="input-group w-100">
+              <label class="form-label">Task: </label>
+              <input
+                type="text"
+                class="form-control task-input w-100"
+                placeholder="task"
+              />
+              <p></p>
+            </div>
+            <div class="input-group w-100 mt-3">
+              <label class="form-label">Details: (optional)</label>
+              <input
+                type="text"
+                class="form-control details-input w-100"
+                placeholder="Details"
+              />
+              <p></p>
+            </div>
+
+            <div class="d-flex btn-action">
+              <button class="btn btn-primary add-task mt-3" onclick="addTask()">
+                Add Task
+              </button>
+              <button
+                class="btn btn-danger mt-3 close-form"
+                onclick="closeform()"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="to-do-page">
+          <div class="to-do-app">
+            <h2>To Do List</h2>
+
+            <button class="btn btn-primary open-form" onclick="openform()">
+              Add Task
+            </button>
+          </div>
+          <div class="task-table">
+            <ul class="list-container"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    <!-- about page -->
+    <div class="about body-content">
+      <div class="centered-container">
+        <div class="background"></div>
+        <div class="about-page mt-5">
+          <h2>About us</h2>
+          <div class="about-content d-sm-block d-lg-flex flex-row">
+            <div class="col-lg-6">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. A ullam
+              dicta voluptatibus facilis aperiam tempora laudantium ab
+              laboriosam cupiditate, totam cum, tenetur est ex. Deserunt velit
+              tempora repellat itaque cum! Nam quas eligendi, itaque sint
+              eveniet ipsum eos asperiores iure rem quo voluptates labore sed
+              magni? Unde, fugiat, dolores deleniti, impedit consectetur
+              reprehenderit perferendis voluptas accusantium cum corporis illum
+              natus! Ab aspernatur fuga neque quis excepturi libero, nostrum
+              illum inventore? Labore, deserunt iste autem nemo voluptates et
+              recusandae? Doloremque possimus quibusdam alias et aliquid eveniet
+              quidem est deleniti. Ut, autem! Voluptates laboriosam excepturi
+              corporis voluptatum doloremque quam sequi eveniet reiciendis
+              voluptate commodi quos deserunt expedita ipsam dolores magnam,
+              ducimus suscipit libero maxime error enim? Impedit fuga cum
+              perferendis necessitatibus voluptas! Facere reiciendis vel eveniet
+              laudantium officia eos architecto repudiandae accusamus dolor. Sit
+              qui laboriosam neque, architecto eum fuga commodi quo ex optio,
+              dolor delectus corrupti placeat vero, ut voluptatum magni.
+            </div>
+            <div class="col-lg-6 mt-sm-3 mt-lg-0">
+              <img src="/images/3.jpg" class="w-100" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
